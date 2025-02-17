@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ibm-plex-mono/2.3.0/fonts/complete/woff2/IBMPlexMono-Regular.woff2" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            line-height: 1.6;
+            color: #333;
+            background-color: white;
+            padding: 2rem;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            max-width: 1400px;
+            margin: 0 auto;
+            gap: 2rem;
+        }
+
+        nav {
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 4rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .introduction {
+            grid-column: 2 / 6;
+            padding-right: 2rem;
+        }
+
+        .image-container {
+            grid-column: 7 / 11;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: auto;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        @media (max-width: 1024px) {
+            .introduction {
+                grid-column: 2 / 7;
+            }
+            
+            .image-container {
+                grid-column: 7 / 12;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                gap: 1rem;
+            }
+
+            .introduction {
+                grid-column: 1 / -1;
+                padding-right: 0;
+            }
+
+            .image-container {
+                grid-column: 1 / -1;
+            }
+
+            .profile-image {
+                max-width: 300px;
+            }
+
+            nav {
+                margin-bottom: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-links">
+                <a href="research.html">Research</a>
+                <a href="talks.html">Talks</a>
+                <a href="writing.html">Writing</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div class="introduction">
+            <h1>Your Name</h1>
+            <p>Welcome! I'm [Your brief title/role]. I [brief description of your work/research focus].</p>
+            <p>Currently, I [current position/project/research]. My interests include [your key interests/areas of focus].</p>
+            <p>You can find more about my work through the links above, or contact me to discuss potential collaborations.</p>
+        </div>
+
+        <div class="image-container">
+            <img src="/api/placeholder/400/400" alt="Your Profile" class="profile-image">
+        </div>
+    </div>
+</body>
+</html>
