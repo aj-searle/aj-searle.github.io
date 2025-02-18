@@ -6,6 +6,10 @@
     <title>Your Name</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ibm-plex-mono/2.3.0/fonts/complete/woff2/IBMPlexMono-Regular.woff2" rel="stylesheet">
     <style>
+        :root {
+            --accent-color: #FF4D00; /* Bright red-orange */
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -42,33 +46,40 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #333;
+            color: var(--accent-color);
             font-size: 1rem;
+            transition: color 0.2s ease;
         }
 
         .nav-links a:hover {
             text-decoration: underline;
+            color: #FF6B33; /* Slightly lighter shade for hover */
         }
 
         .introduction {
-            grid-column: 2 / 6;
+            grid-column: 2 / 7;
             padding-right: 2rem;
         }
 
         .image-container {
-            grid-column: 7 / 11;
+            grid-column: 8 / 12;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 2cm;
         }
 
         .profile-image {
             width: 100%;
             height: auto;
-            max-width: 400px;
+            max-width: 500px;
         }
 
         h1 {
             font-size: 2rem;
             margin-bottom: 1.5rem;
             font-weight: normal;
+            color: var(--accent-color);
         }
 
         p {
@@ -83,7 +94,11 @@
             }
             
             .image-container {
-                grid-column: 7 / 12;
+                grid-column: 8 / 12;
+            }
+            
+            .profile-image {
+                max-width: 450px;
             }
         }
 
@@ -99,10 +114,12 @@
 
             .image-container {
                 grid-column: 1 / -1;
+                justify-content: center;
+                margin-top: 1cm;
             }
 
             .profile-image {
-                max-width: 300px;
+                max-width: 400px;
             }
 
             nav {
@@ -127,15 +144,17 @@
             </div>
         </nav>
 
+
         <div class="introduction">
-            <h1>Your Name</h1>
-            <p>Welcome! I'm [Your brief title/role]. I [brief description of your work/research focus].</p>
-            <p>Currently, I [current position/project/research]. My interests include [your key interests/areas of focus].</p>
+            <h1>Amy Jade Searle</h1>
+            <p>I'm a recent PhD graduate in Physics.</p>
+            <p>My research was on contextuality, a phenomena that occurs in quantum mechanics in which local 'snapshots' of the system look normal, but when you piece them together there is a contradiction. We say it is 'locally consistent but globally inconsistent'. This is a bit like the M.C. Escher drawing on the right (titled 'Relativity').  </p>
             <p>You can find more about my work through the links above, or contact me to discuss potential collaborations.</p>
+            <p>I am currently applying for jobs and psotdocs; I am especially interested in applied maths in computational social sciences.</p>
         </div>
 
         <div class="image-container">
-            <img src="/api/placeholder/400/400" alt="Your Profile" class="profile-image">
+            <img src="images/relativity-mc-escher-2.jpg" alt="Your Profile" class="profile-image">
         </div>
     </div>
 </body>
