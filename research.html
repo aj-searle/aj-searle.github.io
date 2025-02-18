@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Your Name</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ibm-plex-mono/2.3.0/fonts/complete/woff2/IBMPlexMono-Regular.woff2" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #FF4D00;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            line-height: 1.6;
+            color: #333;
+            background-color: white;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .home-link {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-size: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-size: 1rem;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover, .home-link:hover {
+            text-decoration: underline;
+            color: #FF6B33;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            font-weight: normal;
+            color: var(--accent-color);
+        }
+
+        .research-section {
+            margin-bottom: 3rem;
+        }
+
+        .research-section h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+        }
+
+        .research-section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .research-section ul {
+            list-style-type: none;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .research-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="home-link">← Home</a>
+            <div class="nav-links">
+                <a href="research.html">Research</a>
+                <a href="talks.html">Talks</a>
+                <a href="writing.html">Writing</a>
+                <a href="interests.html">Interests</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <h1>Research</h1>
+
+        <div class="research-section">
+            <h2>Current Project</h2>
+            <p>Somulating temporal and causal correlations with spatial correlations. </p>
+            <ul>
+                <li>(i) Developing a Vorob'ev type result for temporal correlations arising from black boxes. Esentially, this allows us to say, given a memory function, whether nonclassical correlations can arise. </li>
+                <li>(ii) Showing that by flattening causal scenrios we can obtain contextuality scenarios. We can therefore simulate nonclassical causal correlatins with contextual ones.</li>
+            </ul>
+        </div>
+
+        <div class="research-section">
+            <h2>Past Projects</h2>
+            <ul>
+                <li>(i) In the past I worked on modelling causal correlations in quantum mechanics by framing them as Nature and Experimenter games. Then, nonclassicallity arises because Nature does not use convex combinations of deterministic strategies.</li>
+                <li>(ii) I also worked on random spin networks, and modelling these when the number of spins becomes extremely large. </li>
+            </ul>
+        </div>
+
+        <div class="research-section">
+            <h2>Secondments</h2>
+            <p>I spent 3 months at INL, Portugal, visiting Rui Soares Barbosa</p>
+        </div>
+
+        <div class="research-section">
+            <h2>Publications</h2>
+            <ul>
+                <li>...</li>
+            </ul>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
