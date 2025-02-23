@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Your Name</title>
+    <title>Talks - Your Name</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ibm-plex-mono/2.3.0/fonts/complete/woff2/IBMPlexMono-Regular.woff2" rel="stylesheet">
     <style>
         :root {
@@ -22,6 +22,7 @@
             color: #333;
             background-color: white;
             padding: 2rem;
+            font-size: 0.9rem; /* Base font size reduced */
         }
 
         .container {
@@ -39,7 +40,7 @@
         .home-link {
             text-decoration: none;
             color: var(--accent-color);
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         .nav-links {
@@ -50,7 +51,7 @@
         .nav-links a {
             text-decoration: none;
             color: var(--accent-color);
-            font-size: 1rem;
+            font-size: 0.9rem;
             transition: color 0.2s ease;
         }
 
@@ -60,36 +61,31 @@
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 1.8rem; /* Reduced from 2rem */
             margin-bottom: 2rem;
             font-weight: normal;
             color: var(--accent-color);
         }
 
-        .research-section {
+        .writing-section {
             margin-bottom: 3rem;
         }
 
-        .research-section h2 {
-            font-size: 1.3rem;
+        .writing-section h2 {
+            font-size: 1.1rem; /* Reduced from 1.3rem */
             margin-bottom: 1rem;
             font-weight: normal;
         }
 
-        .research-section p {
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            color: #444;
-        }
-
-        .research-section ul {
+        .writing-section ul {
             list-style-type: none;
             margin-left: 1rem;
-            margin-bottom: 1rem;
         }
 
-        .research-section li {
+        .writing-section li {
             margin-bottom: 0.5rem;
+            color: #444;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
@@ -123,36 +119,15 @@
             </div>
         </nav>
 
-        <h1>Research</h1>
+        <h1>Code</h1>
 
-        <div class="research-section">
-            <h2>Current Project</h2>
-            <p>Simulating temporal and causal correlations with spatial correlations. </p>
+        <div class="writing-section">
+            <h2>Coding projects</h2>
             <ul>
-                <li>(i) Developing a Vorob'ev type result for temporal correlations arising from black boxes. Esentially, this allows us to say, given a memory function, whether nonclassical correlations can arise. </li>
-                <li>(ii) Showing that by flattening causal scenrios we can obtain contextuality scenarios. We can therefore simulate nonclassical causal correlatins with contextual ones.</li>
+                <li>1. <a href="https://github.com/fermisurfaces/IFermi">IFermi: </a>A Python package for 3D and slice visualisation of the Fermi surance of a material.</li>
+                <li>2. <a href="https://github.com/AlgebraicJulia/CombinatorialChains.jl"> CombinatorialChains.jl: </a>A Julia library for categorical Markov Chain Monte Carlo (MCMC) similation.</li>  
+                <li>3. <a href="https://github.com/aj-searle/KuramotoOscillator"> KuramotoOscillator: </a> A Python library for simulating the synchonisation of Kuramoto oscillators on a multiplex network.</li>
             </ul>
-        </div>
-
-        <div class="research-section">
-            <h2>Past Projects</h2>
-            <ul>
-                <li>(i) In the past I worked on modelling causal correlations in quantum mechanics by framing them as Nature and Experimenter games. Then, nonclassicallity arises because Nature does not use convex combinations of deterministic strategies.</li>
-                <li>(ii) I also worked on random spin networks, and modelling these when the number of spins becomes extremely large. </li>
-            </ul>
-        </div>
-
-        <div class="research-section">
-            <h2>Secondments</h2>
-            <p>I spent 3 months at INL, Portugal, visiting Rui Soares Barbosa</p>
-        </div>
-
-        <div class="research-section">
-            <h2>Publications</h2>
-            <ul>
-                <li>...</li>
-            </ul>
-            <p></p>
         </div>
     </div>
 </body>
