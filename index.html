@@ -100,11 +100,34 @@
 
         @media (max-width: 768px) {
             body {
-                padding: 10px;
+                padding: 5px;
             }
             
             .container {
+                max-width: 100%;
                 padding: 15px;
+                border-width: 1px;
+            }
+
+            .content-image {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                max-width: 100%;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-photo {
+                margin-bottom: 10px;
+            }
+
+            .nav a {
+                margin-right: 10px;
+                font-size: 13px;
             }
         }
     </style>
